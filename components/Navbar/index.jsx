@@ -46,6 +46,7 @@ const Index = () => {
                                         className='absolute  top-[100%] z-20 left-[-2rem] w-[120%] backdrop-blur-lg overflow-hidden  flex flex-col'>
                                         {submenu.map(({ heading, slug, description }, i) => (
                                             <li
+                                            key={i}
                                                 className='p-4 h-fit bg-white hover:bg-gray-50 cursor-pointer border-b'>
                                                 <Link href={slug}>
                                                     <a>

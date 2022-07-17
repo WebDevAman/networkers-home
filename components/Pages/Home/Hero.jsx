@@ -23,11 +23,11 @@ const Hero = () => {
             </div>
             <div className="flex flex-col text-themeDark text-center">
                 <Link href='/somewhere'>
-                    <a className='text-lg md:text-xl font-semibold'>India's Biggest Cisco Training school</a>
+                    <a className='text-lg md:text-xl font-semibold'>India s Biggest Cisco Training school</a>
                 </Link>
                 <HomeSlider />
             </div>
-        </div>
+        </div> 
     )
 }
 

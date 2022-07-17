@@ -124,3 +124,72 @@ export const serviceData = [
 
     },
 ]
+
+export const courses=[
+    {
+        title:'Cloud Masters',
+        desc:'Learn technologies of tomorrow that can give you an edge over competitors. We have created a unique combination of Cloud technologies and Cloud security practices. Cloud Masters takes you into the Deep dive world of cloud computing with real projects. Its first program in india which offers you multi-cloud expertise in AWS,Google cloud and Azure domain',
+        projects:[
+            {
+                0:'Cisco CCNA',
+            },
+            {
+                1:'AWS Associate , AWS Professional and AWS Security'
+            },
+
+               { 
+                2:'GCP And MS AZURE'
+            },
+               
+                {
+                    3:'Cloud and Cloud Security Projects'
+                },
+        ]
+    },
+    {
+        title:'Cyber Masters',
+        desc:'Our 6 Months Cyber Security Program is designed to train fresh graduates. Program covers some of the latest IT Certifications in demand like CCNA, CCNP- 3 modules, CEH and CHFI, Penetration testing/ Cloud Pen testing along with automation using python and ansible. Lifetime video access to course.',
+        projects:[
+            {
+                0:'Cisco CCNA',
+            },
+            {
+                1:'AWS Associate , AWS Professional and AWS Security'
+            },
+
+               { 
+                2:'GCP And MS AZURE'
+            },
+               
+                {
+                    3:'Cloud and Cloud Security Projects'
+                },
+            
+        ]
+    },
+    {
+        title:'CCIE Enterprise Integrated',
+        desc:'This program suitable for candidates who want to build career in Core Networking. Cover SDN, SDWAN and more advance technologies',
+        img:'/assets/images/people4.jpeg'
+    
+        
+    },
+    {
+        title:'CCIE Security Integrated',
+        desc:'6 Months Training program suitable for candidates who want to build a career in Cyber Security and Network security domain',
+        img:'/assets/images/people4.jpeg'
+        
+    },
+    {
+        title:'CCNA + CCNP Combo',
+        desc:'This program suitable for candidates who want to build career in Networking Industry. Learn MPLS,SDWAN and SDACCESS technologies',
+     
+        
+    },
+    {
+        title:'Blockchain Masters',
+        desc:'Blockchain Masters program for building long-lasting career in Web3 technologies. Hands on lab with projects',
+      
+        
+    },
+]

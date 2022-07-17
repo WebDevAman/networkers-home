@@ -4,7 +4,7 @@ import Footer from '../Footer'
 
 const index = ({ children }) => {
     return (
-        <div className='flex flex-col'>
+        <div className='flex flex-col min-w-screen'>
             <Navbar />
             <main>
                 {children}
