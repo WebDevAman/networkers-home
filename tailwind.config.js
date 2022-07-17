@@ -5,10 +5,11 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily:{
-        poppins:["Poppins","sans-serif"]
-      }
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+      
+      },
     },
   },
   plugins: [],
-}
+};

@@ -13,9 +13,8 @@ const SubMenu = ({ openSubmenu, setSubmenu, type }) => {
     <div
       onMouseEnter={() => setSubmenu(true)}
       onMouseLeave={() => setSubmenu(false)}
-      className="cursor-pointer absolute z-[9999999999999999999999] top-4 left-10 px-5 py-4 rounded-md  w-[400px] text-black shadow-xl"
+      className="cursor-pointer bg-white absolute z-[9999] top-4 left-10 px-5 py-4 rounded-md  w-[400px] text-black shadow-xl"
     >
-  
       <div className="flex items-start py-3 flex-col space-y-1 border-b-[1px] border-gray-500">
         <h1 className="font-medium text-lg hover:text-gray-500 text-gray-700">Cyberx Masters</h1>
         <p className="text-xs text-gray-600">
@@ -65,8 +64,7 @@ const MenuItems = ({ setSubmenu, type, setType, openSubmenu }) => {
             </li>
             {item === "Placements Programs" && (
               <p className="cursor-pointer">
-                {" "}
-                <FiChevronDown />{" "}
+                <FiChevronDown />
               </p>
             )}
           </div>
@@ -89,7 +87,11 @@ const Navbar = () => {
   const [open,setOpen]=useState(false)
 
   return (
-    <div className="min-w-screen relative flex  py-2 items-center justify-between px-6">
+    <div 
+    style={{
+      background:'linear-gradient(rgba(255,255,255,0.5),rgba(255,255,255,0.5))'
+    }}
+    className="min-w-screen sticky backdrop-blur-md inset-0 flex  items-center justify-between px-6">
            <NavDrawer open={open} setOpen={setOpen} />
       {/* left side  */}
       <div className="flex items-center space-x-10 ">

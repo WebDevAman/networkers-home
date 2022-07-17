@@ -35,27 +35,27 @@ export default function HomeSlider() {
         modules={[Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide>
-        <Image src={people1} height={530}/>
+        <SwiperSlide className='rounded-3xl my-12  overflow-hidden'>
+        <Image className=' hover:scale-105 transition-all duration-500' src={people1} height={530}/>
         </SwiperSlide>
-        <SwiperSlide>
-            <Image src={people2} />
+        <SwiperSlide className='rounded-3xl my-12 overflow-hidden'>
+            <Image className=' hover:scale-105 transition-all duration-500' src={people2} />
         </SwiperSlide>
-        <SwiperSlide>
-            <Image src={people3} />
+        <SwiperSlide className='rounded-3xl my-12  overflow-hidden'>
+            <Image className=' hover:scale-105 transition-all duration-500' src={people3} />
         </SwiperSlide>
         
-        <SwiperSlide>
-            <Image src={people4} />
+        <SwiperSlide className='rounded-3xl my-12  overflow-hidden'>
+            <Image className=' hover:scale-105 transition-all duration-500' src={people4} />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className='rounded-3xl my-12  overflow-hidden'>
          
 
-            <Image src={people1} height={530}/>
+            <Image className=' hover:scale-105 transition-all duration-500' src={people1} height={530}/>
             
         </SwiperSlide>
-        <SwiperSlide>
-            <Image src={people2} />
+        <SwiperSlide className='rounded-3xl my-12  overflow-hidden'>
+            <Image className=' hover:scale-105 transition-all duration-500' src={people2} />
         </SwiperSlide>
        
       </Swiper>
