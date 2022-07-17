@@ -9,11 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@material-ui/core": "^4.12.4",
     "aos": "^2.3.4",
     "framer-motion": "^6.5.1",
     "next": "12.2.2",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-icons": "^4.4.0",
+    "styled-components": "^5.3.5",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^8.2.6"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",
