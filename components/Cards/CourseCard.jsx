@@ -17,7 +17,7 @@ const CourseCard = ({ title, desc, projects,img ,i}) => {
       {projects ? (
       <div className="flex flex-col space-y-2 items-start text-left">
         {projects.map((project,i) => (
-          <li className="font-semibold text-gray-800">{`${project[i]}`}</li>
+          <li key={i} className="font-semibold text-gray-800">{`${project[i]}`}</li>
         ))}
       </div>
 

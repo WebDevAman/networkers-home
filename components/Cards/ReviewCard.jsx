@@ -7,8 +7,8 @@ const ReviewCard = ({stars,desc,name}) => {
     <div className='bg-white border-[1.5px] rounded-lg p-4 space-y-3 hover:shadow-xl mt-10  hover:scale-110 transition-all ease-in-out duration-150 flex flex-col items-start max-w-screen  w-[400px]'>
         <div className='flex space-x-1'>
 
-  {stars.map((star)=>(
-      <RiStarSFill className='text-orange-400' />
+  {stars.map((star,i)=>(
+      <RiStarSFill key={i} className='text-orange-400' />
       ))}
       </div>
 

@@ -18,7 +18,7 @@ const Testimonials = () => {
           100% Placement Programs
         </h1> 
         <h3 className="font-medium  lg:text-xl mt-3 d text-gray-100">
-          Join India's Top Technology training Company
+          Join India &apos s Top Technology training Company
         </h3>
       </div>
 

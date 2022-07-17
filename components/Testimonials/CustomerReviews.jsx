@@ -31,10 +31,11 @@ const CustomerReviews = () => {
         modules={[Pagination, Navigation]}
         className="mySwiper"
       >
-       {[1,2,3,4,5,6].map((item)=>(
+       {[1,2,3,4,5,6].map((item,i)=>(
 
-          <SwiperSlide>
+          <SwiperSlide key={i}>
             <ReviewCard
+        
               stars={[1, 2, 3, 4, 5]}
               name="Kiran Vishnu"
               desc="I completed CCNA, CCNP Enterprice , PCNSE training from Networkershome. They are the best training institute for networking courses. I know many students from different background are placed at big companies. Networkershome is achieving this through well trained & experience faculties and very effective placement team."

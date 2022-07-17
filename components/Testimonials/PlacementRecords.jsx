@@ -18,9 +18,9 @@ const PlacementRecords = () => {
             height="500"
             src="https://www.youtube.com/embed/xylvwL826HE"
             title="YouTube video player"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
         </div>
         <div className=' lg:hidden   md:flex hidden  items-center justify-center'>
@@ -29,9 +29,9 @@ const PlacementRecords = () => {
             height="400"
             src="https://www.youtube.com/embed/xylvwL826HE"
             title="YouTube video player"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
         </div>
         <div className=' md:hidden   sm:flex hidden items-center justify-center'>
@@ -40,9 +40,9 @@ const PlacementRecords = () => {
             height="315"
             src="https://www.youtube.com/embed/xylvwL826HE"
             title="YouTube video player"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
         </div>
         <div className=' sm:hidden   xs:flex items-center justify-center'>
@@ -51,29 +51,29 @@ const PlacementRecords = () => {
             height="315"
             src="https://www.youtube.com/embed/xylvwL826HE"
             title="YouTube video player"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
+            allowFullScreen
           ></iframe>
         </div>
 
         <div className='pt-6 flex flex-col lg:flex-row gap-5 items-center  '>
           <div className='hidden md:flex'>
 
-        <iframe width="400" height="315" src="https://www.youtube.com/embed/xylvwL826HE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/xylvwL826HE" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
           <div className='flex md:hidden'>
 
-        <iframe width="300" height="315" src="https://www.youtube.com/embed/xylvwL826HE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="300" height="315" src="https://www.youtube.com/embed/xylvwL826HE" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
 
           <div className='hidden md:flex'>
 
-        <iframe width="400" height="315" src="https://www.youtube.com/embed/xylvwL826HE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/xylvwL826HE" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
           <div className='flex md:hidden'>
 
-        <iframe width="300" height="315" src="https://www.youtube.com/embed/xylvwL826HE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="300" height="315" src="https://www.youtube.com/embed/xylvwL826HE" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           </div>
         </div>
       </div>
