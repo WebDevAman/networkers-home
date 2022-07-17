@@ -49,7 +49,7 @@ const MenuItems = ({ setSubmenu, type, setType, openSubmenu }) => {
   return (
     <div className="md:flex  items-center relative text-sm md:text-md space-x-7 mb-2 hidden ">
       {["Home", "Placements Programs", "Courses"].map((item, i) => (
-        <div className="flex flex-col">
+        <div className="flex flex-col" key={i} >
           <div
             className="flex  items-center space-x-2"
             onMouseEnter={() => {
