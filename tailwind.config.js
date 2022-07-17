@@ -5,9 +5,14 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        'themeColor': '#0049F3',
+        'themeDark': '#111111'
+      },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
-      
+        inter: ['Inter', 'sans-serif'],
+
       },
     },
   },
