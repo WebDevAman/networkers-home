@@ -26,7 +26,7 @@ const Video1 = () => {
   return (
     <>
       <div className="w-full relative pb-[60%]">
-        <iframe className='absolute w-full h-full' src="https://www.youtube.com/embed/xylvwL826HE" title="NETWORKERS HOME -100% Placement programs in Cyber security, Networking and Cloud" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe className='absolute w-full h-full' src="https://www.youtube.com/embed/xylvwL826HE" title="NETWORKERS HOME -100% Placement programs in Cyber security, Networking and Cloud" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
       </div>
     </>
   )
@@ -35,7 +35,7 @@ const Video2 = () => {
   return (
     <>
       <div className="w-full relative pb-[60%]">
-        <iframe className='absolute w-full h-full' src="https://www.youtube.com/embed/pNm09pvVauM" title="PRANAV from Delhi got placed in Cisco Systems,Bangalore" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe className='absolute w-full h-full' src="https://www.youtube.com/embed/pNm09pvVauM" title="PRANAV from Delhi got placed in Cisco Systems,Bangalore" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
       </div>
     </>
   )
@@ -44,7 +44,7 @@ const Video3 = () => {
   return (
     <>
       <div className="w-full relative pb-[60%]">
-        <iframe className='absolute w-full h-full' src="https://www.youtube.com/embed/8sFKna-T9XY" title="Vishal got placed in TOP MNC" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe className='absolute w-full h-full' src="https://www.youtube.com/embed/8sFKna-T9XY" title="Vishal got placed in TOP MNC" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
       </div>
     </>
   )

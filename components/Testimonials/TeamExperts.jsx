@@ -13,7 +13,7 @@ const TeamExperts = () => {
 
 <div className='flex flex-col space-y-2 mt-10 text-center'>
   <h1 className='text-3xl md:text-5xl font-bold text-white'>Meeet our team of expert instructors</h1>
-  <h4 className='text-sm text-white md:text-lg'>India's most experienced Team of Engineers and instructors. Our instructors are our reputation</h4>
+  <h4 className='text-sm text-white md:text-lg'>India &apos s most experienced Team of Engineers and instructors. Our instructors are our reputation</h4>
 </div>
 
 {/* team exports  */}
@@ -23,6 +23,8 @@ const TeamExperts = () => {
   data-aos="zoom-out"
   data-aos-delay={`${i *2}00`}
   data-aos-duration="800"
+  key={i}
+  
   >
   <TeamExpert img={expert.image}  />
   <h2 className='font-bold'> {expert.name} </h2>

@@ -25,7 +25,7 @@ const ArticlesAndCourses = () => {
 {/* wraperr */}
 <div className='grid grid-cols-1 md:grid-cols-2 mt-10 lg:grid-cols-3 gap-4'>
     {courseArticles.map(({image,title,type,desc},i)=>(
-        <div
+        <div key={i}
   data-aos="zoom-out"
   data-aos-delay={`${i *2}00`}
   data-aos-duration="800">

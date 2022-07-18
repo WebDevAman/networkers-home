@@ -43,7 +43,7 @@ const Video1 = () => {
   return (
     <>
       <div className="w-full relative pb-[60%]">
-        <iframe className='absolute w-full h-full' src="https://www.youtube.com/embed/hDuCVAlxZaM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe className='absolute w-full h-full' src="https://www.youtube.com/embed/hDuCVAlxZaM" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
       </div>
     </>
   )
