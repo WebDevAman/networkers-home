@@ -3,16 +3,16 @@ import React from 'react'
 import { IoIosCheckmarkCircle } from 'react-icons/io'
 import { motion } from 'framer-motion'
 
-const Placements = () => {
+const Placements = () => { 
   return (
     <div className=" p-5 lg:px-10 grid grid-cols-1 lg:grid-cols-2 lg:pl-20 place-content-center place-items-center container  items-center">
       <div data-aos="fade-right"
         data-aos-delay="400"
         data-aos-duration="800"
-        className="flex items-center text-center lg:text-left lg:items-start flex-col space-y-5 lg:space-y-5">
+        className="flex items-start  md:items-center text-left md:text-center lg:text-left lg:items-start flex-col space-y-5 lg:space-y-5">
         <div className="flex flex-col space-y-3">
-          <h1 className='text-2xl md:text-4xl  lg:text-5xl font-bold'>Unlimited Learning</h1>
-          <h1 className='text-2xl md:text-4xl  lg:text-5xl font-bold'>Unbeatable Placements</h1>
+          <h1 className='text-3xl md:text-4xl  lg:text-5xl font-bold'>Unlimited Learning</h1>
+          <h1 className='text-3xl md:text-4xl  lg:text-5xl font-bold'>Unbeatable Placements</h1>
           <div className="h-1 bg-themeColor w-[8rem]"></div>
         </div>
 
