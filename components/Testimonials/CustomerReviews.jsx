@@ -17,8 +17,8 @@ const CustomerReviews = () => {
         </h1>
       </div>
 
-      
-  <Swiper
+
+      <Swiper
         slidesPerView={3}
         spaceBetween={30}
         slidesPerGroup={3}
@@ -29,23 +29,23 @@ const CustomerReviews = () => {
         }}
         navigation={true}
         modules={[Pagination, Navigation]}
-        className="mySwiper"
+        className="mySwiper container !py-12"
       >
-       {[1,2,3,4,5,6].map((item,i)=>(
+        {[1, 2, 3, 4, 5, 6].map((item, i) => (
 
           <SwiperSlide key={i}>
             <ReviewCard
-        
+
               stars={[1, 2, 3, 4, 5]}
               name="Kiran Vishnu"
               desc="I completed CCNA, CCNP Enterprice , PCNSE training from Networkershome. They are the best training institute for networking courses. I know many students from different background are placed at big companies. Networkershome is achieving this through well trained & experience faculties and very effective placement team."
             />
           </SwiperSlide>
-       ))}
-         
-     
+        ))}
+
+
       </Swiper>
-     
+
     </div>
   )
 }

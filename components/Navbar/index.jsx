@@ -20,7 +20,10 @@ const Index = () => {
                 </div>
             </div>
             <header
-                className='flex border-b border-gray-100 z-50 bg-white sticky inset-0  py-1 md:py-2 justify-center w-full'>
+                style={{
+                    background: 'linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7))'
+                }}
+                className='flex z-50 backdrop-blur-md sticky inset-0  py-1 md:py-2 justify-center w-full'>
                 <NavDrawer open={open} setOpen={setOpen} />
                 <div className="container !overflow-visible flex justify-between">
                     <div className="h-full items-center flex ">
@@ -46,7 +49,7 @@ const Index = () => {
                                         className='absolute  top-[100%] z-20 left-[-2rem] w-[120%] backdrop-blur-lg overflow-hidden  flex flex-col'>
                                         {submenu.map(({ heading, slug, description }, i) => (
                                             <li
-                                            key={i}
+                                                key={i}
                                                 className='p-4 h-fit bg-white hover:bg-gray-50 cursor-pointer border-b'>
                                                 <Link href={slug}>
                                                     <a>

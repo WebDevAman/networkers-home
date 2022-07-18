@@ -14,6 +14,10 @@ module.exports = {
         inter: ['Inter', 'sans-serif'],
 
       },
+      scale: {
+        '102': '1.02'
+      }
+
     },
   },
   plugins: [],

@@ -20,6 +20,10 @@ html {
   .container {
     @apply w-full max-w-[90rem] mx-auto px-4 overflow-hidden font-poppins text-themeDark !important
   }
+
+  .small-container {
+    @apply w-full max-w-[75rem] mx-auto font-poppins text-themeDark !important
+  }
 }
 
 .swiper-slide {
@@ -174,9 +178,9 @@ input[type=number]::-webkit-outer-spin-button {
   .MuiDialog-paper {
     margin: 5px !important;
   }
-  .swiper-slide{
+
+  .swiper-slide {
     width: 250px !important;
     height: 500px !important;
   }
 }
-
