@@ -8,6 +8,7 @@ import NavDrawer from './NavDrawer'
 import Button from '../common/Button'
 import TopBar from './TopBar'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import { motion } from 'framer-motion'
 
 const Index = () => {
@@ -31,6 +32,9 @@ const Index = () => {
             window.removeEventListener("scroll", handleScroll, false);
         };
     }, [lastYPos]);
+    const router = useRouter()
+    const page = router.pathname.split('/')[1] === '' ? '/' : router.pathname.split('/')[1]
+    console.log(page)
     return (
         <>
             <TopBar />
@@ -59,7 +63,7 @@ const Index = () => {
                             <li
                                 onMouseEnter={() => setShowSubmenu(label)} onMouseLeave={() => setShowSubmenu('')}
                                 key={i} className='relative group h-full group flex space-x-3 items-center '>
-                                <a href={slug} className={`${submenu ? 'group-hover:text-themeColor' : 'link'} flex  text-base font-medium text-lightBlack`}>
+                                <a href={slug} className={`${page === slug ? 'text-themeColor' : 'text-themeDark'} ${submenu ? 'group-hover:text-themeColor' : 'link'} flex  text-base font-medium text-lightBlack`}>
                                     {label}
                                 </a>
                                 {submenu &&
@@ -75,7 +79,7 @@ const Index = () => {
                                         {submenu.map(({ heading, slug, description }, i) => (
                                             <li
                                                 key={i}
-                                                className='p-4 h-fit bg-white hover:bg-gray-50 cursor-pointer border-b'>
+                                                className={`p-4 h-fit bg-white hover:bg-gray-50 cursor-pointer border-b`}>
                                                 <Link href={slug}>
                                                     <a>
                                                         <h1 className='text-base font-semibold'>{heading}</h1>

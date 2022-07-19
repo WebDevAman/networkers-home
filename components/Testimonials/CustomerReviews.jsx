@@ -39,7 +39,19 @@ const CustomerReviews = () => {
             </React.Fragment>
           ))}
         </div>
-        <div className="flex flex-col space-y-6">
+        <div className="flex flex-col md:hidden lg:flex space-y-6">
+          {reviews.slice(2 * sliceBy, 3 * sliceBy).map(({ name, rating, message }, i) => (
+            <React.Fragment key={i}>
+
+              <ReviewCard
+                rating={rating}
+                name={name}
+                message={message}
+              />
+            </React.Fragment>
+          ))}
+        </div>
+        <div className="!hidden md:!grid lg:!hidden !grid-cols-2 !col-span-2 !w-full gap-6">
           {reviews.slice(2 * sliceBy, 3 * sliceBy).map(({ name, rating, message }, i) => (
             <React.Fragment key={i}>
 

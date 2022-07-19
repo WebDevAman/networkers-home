@@ -13,6 +13,7 @@ const PlacementRecords = () => {
             Over 200+ recruiting companies from all over India and UAE
 
           </h3>
+
         </div>
         <div className='flex flex-col space-y-4 md:space-y-8 px-4 max-w-[60rem] w-full mx-auto'>
           <div
