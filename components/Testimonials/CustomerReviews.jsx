@@ -16,30 +16,39 @@ const CustomerReviews = () => {
       <div
         className={`grid grid-cols-1 relative ${showFull ? 'h-[100%]' : 'h-[800px]'} py-12 md:grid-cols-2 lg:grid-cols-3 gap-8`}>
         <div className="flex flex-col space-y-6">
-          {reviews.slice(0, sliceBy).map(({ name, rating, message }) => (
-            <ReviewCard
-              rating={rating}
-              name={name}
-              message={message}
-            />
+          {reviews.slice(0, sliceBy).map(({ name, rating, message }, i) => (
+            <React.Fragment key={i}>
+
+              <ReviewCard
+                rating={rating}
+                name={name}
+                message={message}
+              />
+            </React.Fragment >
+
           ))}
         </div>
         <div className="flex flex-col space-y-6">
-          {reviews.slice(sliceBy, 2 * sliceBy).map(({ name, rating, message }) => (
-            <ReviewCard
-              rating={rating}
-              name={name}
-              message={message}
-            />
+          {reviews.slice(sliceBy, 2 * sliceBy).map(({ name, rating, message }, i) => (
+            <React.Fragment key={i}>
+              <ReviewCard
+                rating={rating}
+                name={name}
+                message={message}
+              />
+            </React.Fragment>
           ))}
         </div>
         <div className="flex flex-col space-y-6">
-          {reviews.slice(2 * sliceBy, 3 * sliceBy).map(({ name, rating, message }) => (
-            <ReviewCard
-              rating={rating}
-              name={name}
-              message={message}
-            />
+          {reviews.slice(2 * sliceBy, 3 * sliceBy).map(({ name, rating, message }, i) => (
+            <React.Fragment key={i}>
+
+              <ReviewCard
+                rating={rating}
+                name={name}
+                message={message}
+              />
+            </React.Fragment>
           ))}
         </div>
         <div

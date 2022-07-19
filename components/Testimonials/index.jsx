@@ -15,7 +15,7 @@ const Testimonials = () => {
         <div className="flex text-center flex-col spacey-2 items-center justify-center">
           <SectionTitle text={'100% Placement Programs'} />
           <h3 className="font-medium lg:text-lg md:text-xl mt-3 d ">
-            Join India's Top Technology training Company
+            {`Join India's Top Technology training Company`}
           </h3>
         </div>
 

@@ -16,12 +16,12 @@ const Placements = () => {
         </div>
 
         <p className='text-sm md:text-base max-w-[40rem] mx-auto lg:mx-0 text-gray-600 font-medium'>
-          CCIE training, Networking, Cloud, and Cyber security certification
+          {` CCIE training, Networking, Cloud, and Cyber security certification
           training with 100% placement. Lifetime access to Recorded Video
           content. In accordance with current occupational needs, we have
           designed our courses on live technology and real-time scenarios. We
           are Industry leaders in Online, classroom, and corporate training for
-          more than 100+ in-demand IT Certifications
+          more than 100+ in-demand IT Certifications`}
         </p>
         <div className='flex mx-auto  lg:mx-0 items-center gap-10 py-4'>
           <p className='flex items-center space-x-1 whitespace-nowrap text-xs md:text-base'> <IoIosCheckmarkCircle className='text-xl text-green-500' />  <span>Top Brand MNC Placements</span> </p>

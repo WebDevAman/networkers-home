@@ -9,7 +9,7 @@ const TeamExperts = () => {
     >
       <div className='flex flex-col space-y-4 text-center'>
         <SectionTitle text={'Our Expert Instructors'} />
-        <h4 className='text-sm md:text-lg max-w-[45rem] mx-auto '>India's most experienced Team of Engineers and instructors. Our instructors are our reputation</h4>
+        <h4 className='text-sm md:text-lg max-w-[45rem] mx-auto '>{`India's most experienced Team of Engineers and instructors. Our instructors are our reputation`}</h4>
       </div>
 
       {/* team exports  */}
