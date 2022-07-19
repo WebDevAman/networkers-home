@@ -1,21 +1,44 @@
 import React from 'react'
+import SectionTitle from '../Titles/SectionTitle'
 
 const PlacementRecords = () => {
   return (
-    <div className="flex flex-col small-container space-y-8 justify-center py-3">
-      <div className="flex flex-col items-center space-y-3">
-        <h1 className="font-bold text-center text-2xl md:text-4xl lg:text-5xl ">
-          Unbeatable Placement Record
-        </h1>
-        <h3 className="text-gray-600 text-lg">
-          Over 200+ recruiting companies from all over India and UAE
-        </h3>
-      </div>
-      <div className='flex flex-col space-y-4 md:space-y-8 px-4 max-w-[60rem] w-full mx-auto'>
-        <Video1 />
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
-          <Video2 />
-          <Video3 />
+    <div className='themeBg py-12'>
+
+      <div className="flex  flex-col small-container space-y-8 justify-center py-3">
+
+        <div className="flex text-center flex-col spacey-2 items-center justify-center">
+          <SectionTitle text={'Unbeatable Placement Record'} />
+          <h3 className="font-medium lg:text-lg md:text-xl mt-3 d ">
+            Over 200+ recruiting companies from all over India and UAE
+
+          </h3>
+        </div>
+        <div className='flex flex-col space-y-4 md:space-y-8 px-4 max-w-[60rem] w-full mx-auto'>
+          <div
+            data-aos="fade-up"
+            data-aos-delay={`100`}
+            data-aos-duration="800"
+          >
+            <Video1 />
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
+            <div
+              data-aos="fade-up"
+              data-aos-delay={`200`}
+              data-aos-duration="800"
+            >
+              <Video2 />
+            </div>
+            <div
+              data-aos="fade-up"
+              data-aos-delay={`300`}
+              data-aos-duration="800"
+            >
+              <Video3 />
+            </div>
+
+          </div>
         </div>
       </div>
     </div>

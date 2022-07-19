@@ -1,47 +1,58 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { reviews } from '../dummyData'
 import ReviewCard from '../Cards/ReviewCard'
-import { Swiper, SwiperSlide } from 'swiper/react'
-
-// Import Swiper styles
-import 'swiper/css'
-import 'swiper/css/pagination'
-import 'swiper/css/navigation'
-import { Pagination, Navigation } from "swiper";
+import SectionTitle from '../Titles/SectionTitle'
+import Button from '../common/Button'
 
 const CustomerReviews = () => {
+  const sliceBy = Math.ceil(reviews.length / 3)
+  const [showFull, setShowFull] = useState(false)
   return (
-    <div className="container flex flex-col items-center justify-center py-4 ">
+    <div className="container flex flex-col items-center justify-center py-4 !my-12">
       {/* /// container  */}
       <div>
-        <h1 className="font-bold text-4xl p-2 w-full border-black  md:text-6xl">
-          What our customers say
-        </h1>
+        <SectionTitle text={'What our customers say'} bordered />
       </div>
-      <Swiper
-        slidesPerView={3}
-        spaceBetween={30}
-        slidesPerGroup={3}
-        loop={true}
-        loopFillGroupWithBlank={true}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
-        modules={[Pagination, Navigation]}
-        className="mySwiper container !py-12"
-      >
-        {[1, 2, 3, 4, 5, 6].map((item, i) => (
-          <SwiperSlide key={i}>
+      <div
+        className={`grid grid-cols-1 relative ${showFull ? 'h-[100%]' : 'h-[800px]'} py-12 md:grid-cols-2 lg:grid-cols-3 gap-8`}>
+        <div className="flex flex-col space-y-6">
+          {reviews.slice(0, sliceBy).map(({ name, rating, message }) => (
             <ReviewCard
-              stars={[1, 2, 3, 4, 5]}
-              name="Kiran Vishnu"
-              desc="I completed CCNA, CCNP Enterprice , PCNSE training from Networkershome. They are the best training institute for networking courses. I know many students from different background are placed at big companies. Networkershome is achieving this through well trained & experience faculties and very effective placement team."
+              rating={rating}
+              name={name}
+              message={message}
             />
-          </SwiperSlide>
-        ))}
+          ))}
+        </div>
+        <div className="flex flex-col space-y-6">
+          {reviews.slice(sliceBy, 2 * sliceBy).map(({ name, rating, message }) => (
+            <ReviewCard
+              rating={rating}
+              name={name}
+              message={message}
+            />
+          ))}
+        </div>
+        <div className="flex flex-col space-y-6">
+          {reviews.slice(2 * sliceBy, 3 * sliceBy).map(({ name, rating, message }) => (
+            <ReviewCard
+              rating={rating}
+              name={name}
+              message={message}
+            />
+          ))}
+        </div>
+        <div
+          style={{
+            background: 'linear-gradient(rgba(255,255,255,0.2),rgba(255,255,255) 99%)'
+          }}
+          className={`w-full absolute h-[20rem] bg-red-500 bottom-[-5rem] flex items-center justify-center`}>
+          <div onClick={() => setShowFull(!showFull)}>
 
-
-      </Swiper>
+            <Button text={showFull ? 'Show less...' : 'Show more...'} />
+          </div>
+        </div>
+      </div>
 
     </div>
   )

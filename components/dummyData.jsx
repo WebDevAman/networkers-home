@@ -1,4 +1,4 @@
-import { FaFacebookF, FaInstagram, FaPinterestP } from 'react-icons/fa'
+import { FaFacebookF, FaInstagram, FaPinterestP, FaTwitter } from 'react-icons/fa'
 import { HiOutlineMail } from 'react-icons/hi'
 import { AiFillPhone } from 'react-icons/ai'
 export const navData = [
@@ -16,19 +16,19 @@ export const navData = [
                 description: '100% Placement Program in Cyber Security'
             },
             {
-                heading: 'Cyberx Masters',
+                heading: 'Cloud Masters',
                 slug: 'cyberx-masters',
-                description: '100% Placement Program in Cyber Security'
+                description: '100% Placement program in Multicloud and Cloud security'
             },
             {
-                heading: 'Cyberx Masters',
+                heading: 'CCIE Enterprise',
                 slug: 'cyberx-masters',
-                description: '100% Placement Program in Cyber Security'
+                description: 'Most demanded Networking certification- 100 % Placement'
             },
             {
-                heading: 'Cyberx Masters',
+                heading: 'CCIE Security',
                 slug: 'cyberx-masters',
-                description: '100% Placement Program in Cyber Security'
+                description: 'Most demanded Networking certification- 100% Placement'
             },
         ]
     },
@@ -45,11 +45,9 @@ export const slideData = [
 ]
 
 export const socialData = [
-    { link: '/', icon: <AiFillPhone className='text-lg' /> },
-    { link: '/', icon: <HiOutlineMail className='text-lg' /> },
     { link: '/', icon: <FaFacebookF className='text-lg' /> },
+    { link: '/', icon: <FaTwitter className='text-lg' /> },
     { link: '/', icon: <FaInstagram className='text-lg' /> },
-    { link: '/', icon: <FaPinterestP className='text-lg' /> },
 ]
 
 export const galleryData = [
@@ -125,71 +123,137 @@ export const serviceData = [
     },
 ]
 
-export const courses=[
+export const courses = [
     {
-        title:'Cloud Masters',
-        desc:'Learn technologies of tomorrow that can give you an edge over competitors. We have created a unique combination of Cloud technologies and Cloud security practices. Cloud Masters takes you into the Deep dive world of cloud computing with real projects. Its first program in india which offers you multi-cloud expertise in AWS,Google cloud and Azure domain',
-        projects:[
+        title: 'Cloud Masters',
+        desc: 'Learn technologies of tomorrow that can give you an edge over competitors. We have created a unique combination of Cloud technologies and Cloud security practices. Cloud Masters takes you into the Deep dive world of cloud computing with real projects. Its first program in india which offers you multi-cloud expertise in AWS,Google cloud and Azure domain',
+        projects: [
             {
-                0:'Cisco CCNA',
+                0: 'Cisco CCNA',
             },
             {
-                1:'AWS Associate , AWS Professional and AWS Security'
+                1: 'AWS Associate , AWS Professional and AWS Security'
             },
 
-               { 
-                2:'GCP And MS AZURE'
+            {
+                2: 'GCP And MS AZURE'
             },
-               
-                {
-                    3:'Cloud and Cloud Security Projects'
-                },
+
+            {
+                3: 'Cloud and Cloud Security Projects'
+            },
         ]
     },
     {
-        title:'Cyber Masters',
-        desc:'Our 6 Months Cyber Security Program is designed to train fresh graduates. Program covers some of the latest IT Certifications in demand like CCNA, CCNP- 3 modules, CEH and CHFI, Penetration testing/ Cloud Pen testing along with automation using python and ansible. Lifetime video access to course.',
-        projects:[
+        title: 'Cyber Masters',
+        desc: 'Our 6 Months Cyber Security Program is designed to train fresh graduates. Program covers some of the latest IT Certifications in demand like CCNA, CCNP- 3 modules, CEH and CHFI, Penetration testing/ Cloud Pen testing along with automation using python and ansible. Lifetime video access to course.',
+        projects: [
             {
-                0:'Cisco CCNA',
+                0: 'Cisco CCNA',
             },
             {
-                1:'AWS Associate , AWS Professional and AWS Security'
+                1: 'AWS Associate , AWS Professional and AWS Security'
             },
 
-               { 
-                2:'GCP And MS AZURE'
+            {
+                2: 'GCP And MS AZURE'
             },
-               
-                {
-                    3:'Cloud and Cloud Security Projects'
-                },
-            
+
+            {
+                3: 'Cloud and Cloud Security Projects'
+            },
+
         ]
     },
     {
-        title:'CCIE Enterprise Integrated',
-        desc:'This program suitable for candidates who want to build career in Core Networking. Cover SDN, SDWAN and more advance technologies',
-        img:'/assets/images/people4.jpeg'
-    
-        
+        title: 'CCIE Enterprise Integrated',
+        desc: 'This program suitable for candidates who want to build career in Core Networking. Cover SDN, SDWAN and more advance technologies',
+        img: '/assets/images/people4.jpeg'
+
+
     },
     {
-        title:'CCIE Security Integrated',
-        desc:'6 Months Training program suitable for candidates who want to build a career in Cyber Security and Network security domain',
-        img:'/assets/images/people4.jpeg'
-        
+        title: 'CCIE Security Integrated',
+        desc: '6 Months Training program suitable for candidates who want to build a career in Cyber Security and Network security domain',
+        img: '/assets/images/people4.jpeg'
+
     },
     {
-        title:'CCNA + CCNP Combo',
-        desc:'This program suitable for candidates who want to build career in Networking Industry. Learn MPLS,SDWAN and SDACCESS technologies',
-     
-        
+        title: 'CCNA + CCNP Combo',
+        desc: 'This program suitable for candidates who want to build career in Networking Industry. Learn MPLS,SDWAN and SDACCESS technologies',
+
+
     },
     {
-        title:'Blockchain Masters',
-        desc:'Blockchain Masters program for building long-lasting career in Web3 technologies. Hands on lab with projects',
-      
-        
+        title: 'Blockchain Masters',
+        desc: 'Blockchain Masters program for building long-lasting career in Web3 technologies. Hands on lab with projects',
+
+
+    },
+]
+
+export const reviews = [
+    {
+        name: 'Kiran Vishnu',
+        message: 'I completed CCNA, CCNP Enterprice , PCNSE training from Networkershome. They are the best training institute for networking courses. I know many students from different background are placed at big companies. Networkershome is achieving this through well trained & experience faculties and very effective placement team.',
+        rating: 5
+    },
+    {
+        name: 'Sri Chakraverthi',
+        message: 'If anyone want to start a carrier in networking domain then its a perfect place for it. Believe me here we can get very good environment for lab practices and self studies and there are lot of supportive trainers who can teach good and also guide you for your placements and CCIE lab exam also',
+        rating: 5
+    },
+    {
+        name: 'Sachin Bangari',
+        message: `My personal experience in networkers home is very very good. I had joined for a course here and got 2 offers immediately after completion of my course.My advice to the candidates willing to do networking course is that, this is the Best training institute in Bangalore in networking domain, the concepts clarity, the lab facility anytime we need, the support and respect from the management and special mention the HR Preethi ma'am will support everyone to get placed it you are serious about your learning.`,
+        rating: 5
+    },
+
+    {
+        name: 'Kiran Vishnu',
+        message: 'I completed CCNA, CCNP Enterprice , PCNSE training from Networkershome. They are the best training institute for networking courses. I know many students from different background are placed at big companies. Networkershome is achieving this through well trained & experience faculties and very effective placement team.',
+        rating: 5
+    },
+    {
+        name: 'Sachin Bangari',
+        message: `My personal experience in networkers home is very very good. I had joined for a course here and got 2 offers immediately after completion of my course.My advice to the candidates willing to do networking course is that, this is the Best training institute in Bangalore in networking domain, the concepts clarity, the lab facility anytime we need, the support and respect from the management and special mention the HR Preethi ma'am will support everyone to get placed it you are serious about your learning.`,
+        rating: 5
+    },
+    {
+        name: 'Sri Chakraverthi',
+        message: 'If anyone want to start a carrier in networking domain then its a perfect place for it. Believe me here we can get very good environment for lab practices and self studies and there are lot of supportive trainers who can teach good and also guide you for your placements and CCIE lab exam also',
+        rating: 5
+    },
+    {
+        name: 'Kiran Vishnu',
+        message: 'I completed CCNA, CCNP Enterprice , PCNSE training from Networkershome. They are the best training institute for networking courses. I know many students from different background are placed at big companies. Networkershome is achieving this through well trained & experience faculties and very effective placement team.',
+        rating: 5
+    },
+    {
+        name: 'Sri Chakraverthi',
+        message: 'If anyone want to start a carrier in networking domain then its a perfect place for it. Believe me here we can get very good environment for lab practices and self studies and there are lot of supportive trainers who can teach good and also guide you for your placements and CCIE lab exam also',
+        rating: 5
+    },
+    {
+        name: 'Kiran Vishnu',
+        message: 'I completed CCNA, CCNP Enterprice , PCNSE training from Networkershome. They are the best training institute for networking courses. I know many students from different background are placed at big companies. Networkershome is achieving this through well trained & experience faculties and very effective placement team.',
+        rating: 5
+    },
+
+    {
+        name: 'Sachin Bangari',
+        message: `My personal experience in networkers home is very very good. I had joined for a course here and got 2 offers immediately after completion of my course.My advice to the candidates willing to do networking course is that, this is the Best training institute in Bangalore in networking domain, the concepts clarity, the lab facility anytime we need, the support and respect from the management and special mention the HR Preethi ma'am will support everyone to get placed it you are serious about your learning.`,
+        rating: 5
+    },
+
+    {
+        name: 'Sri Chakraverthi',
+        message: 'If anyone want to start a carrier in networking domain then its a perfect place for it. Believe me here we can get very good environment for lab practices and self studies and there are lot of supportive trainers who can teach good and also guide you for your placements and CCIE lab exam also',
+        rating: 5
+    },
+    {
+        name: 'Sachin Bangari',
+        message: `My personal experience in networkers home is very very good. I had joined for a course here and got 2 offers immediately after completion of my course.My advice to the candidates willing to do networking course is that, this is the Best training institute in Bangalore in networking domain, the concepts clarity, the lab facility anytime we need, the support and respect from the management and special mention the HR Preethi ma'am will support everyone to get placed it you are serious about your learning.`,
+        rating: 5
     },
 ]

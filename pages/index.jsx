@@ -25,19 +25,18 @@ export default function Home() {
         <meta name="description" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className='flex flex-col my-12 space-y-12'>
+      <div className='flex flex-col mt-12 space-y-12 lg:space-y-20'>
         <Hero />
-        <Testimonials/>
+        <Testimonials />
         <div className='max-w-screen space-y-10'>
-
-        <Placements/> 
-        <PlacementRecords/>
-        <CustomerReviews/>
-        <CourseFeatures/>
-        <ContactusTestimonial/>
-        <TeamExperts/>
-        <Questions/>
-        <ArticlesAndCourses/>
+          <Placements />
+          <PlacementRecords />
+          <CustomerReviews />
+          <CourseFeatures />
+          <ContactusTestimonial />
+          <TeamExperts />
+          <Questions />
+          <ArticlesAndCourses />
         </div>
       </div>
     </Layout>

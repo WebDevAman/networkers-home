@@ -12,22 +12,45 @@ const Hero = () => {
     return (
         <div className='min-h-screen  flex flex-col space-y-12'>
             <div className="flex flex-col container items-center space-y-6">
-                <h1 className='text-lg md:text-xl font-semibold'>100% Placement programs</h1>
-                <h1 className='text-3xl font-inter font-extrabold text-center max-w-[55rem] md:text-5xl lg:text-7xl'>
+                <h1
+                    data-aos="fade-up"
+                    data-aos-delay={`200`}
+                    data-aos-duration="800"
+                    className='text-lg md:text-xl font-semibold'>100% Placement programs</h1>
+                <h1
+                    data-aos="fade-up"
+                    data-aos-delay={`300`}
+                    data-aos-duration="800"
+                    className='text-3xl font-inter font-extrabold text-center max-w-[55rem] md:text-5xl lg:text-7xl'>
                     CCIE, Cloud and Cyber Security Programs
                 </h1>
-                <h1 className='text-xl md:text-2xl max-w-[50rem] font-semibold text-center'>
+                <h1
+                    data-aos="fade-up"
+                    data-aos-delay={`400`}
+                    data-aos-duration="800"
+                    className='text-xl md:text-2xl max-w-[50rem] font-semibold text-center'>
                     Lifetime access to Videos. CCIE Certified instructors. 100% Placement programs
                 </h1>
-                <Button text='Join Now' big />
+                <div
+                    data-aos="fade-up"
+                    data-aos-delay={`500`}
+                    data-aos-duration="800"
+                >
+
+                    <Button text='Join Now' big />
+                </div>
             </div>
-            <div className="flex flex-col text-themeDark text-center">
+            <div
+                data-aos="fade-up"
+                data-aos-delay={`600`}
+                data-aos-duration="800"
+                className="flex flex-col text-themeDark text-center">
                 <Link href='/somewhere'>
                     <a className='text-lg md:text-xl font-semibold'>India s Biggest Cisco Training school</a>
                 </Link>
                 <HomeSlider />
             </div>
-        </div> 
+        </div>
     )
 }
 
@@ -55,9 +78,16 @@ const HomeSlider = () => {
                     className="mySwiper hero"
                 >
                     {HeroSliderImages.map((img, i) => (
-                        <SwiperSlide key={i} className='rounded-3xl mt-6 mb-16 max-h-[24rem] h-full flex items-center overflow-hidden'>
-                            <img className='hover:scale-105 transition-all object-cover duration-500' src={img} alt='image' />
-                        </SwiperSlide>
+                        <div
+                            key={i}
+                            data-aos="fade-up"
+                            data-aos-delay={`${i + 6}00`}
+                            data-aos-duration="800"
+                        >
+                            <SwiperSlide className='rounded-3xl mt-6 mb-16 max-h-[24rem] h-full flex items-center overflow-hidden'>
+                                <img className='hover:scale-105 transition-all object-cover duration-500' src={img} alt='image' />
+                            </SwiperSlide>
+                        </div>
                     ))}
 
                 </Swiper>

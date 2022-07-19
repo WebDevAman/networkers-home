@@ -3,15 +3,15 @@ import Accordion from '@material-ui/core/Accordion';
 import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
 import Typography from '@material-ui/core/Typography';
-import {TbChevronDown} from 'react-icons/tb'
+import { TbChevronDown } from 'react-icons/tb'
 
 
-export default function SimpleAccordion({ques,ans}) {
+export default function SimpleAccordion({ ques, ans }) {
   return (
     <div>
-      <Accordion>
+      <Accordion className='p-2 border-b !shadow-none'>
         <AccordionSummary
-          expandIcon={<TbChevronDown/>}
+          expandIcon={<TbChevronDown />}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
@@ -19,12 +19,12 @@ export default function SimpleAccordion({ques,ans}) {
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-   {ans}
+            {ans}
           </Typography>
         </AccordionDetails>
       </Accordion>
-    
-      
+
+
     </div>
   );
 }

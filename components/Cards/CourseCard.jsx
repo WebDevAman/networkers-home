@@ -6,11 +6,11 @@ const CourseCard = ({ title, desc, projects, img, i }) => {
   return (
     <Link href='/'>
       <a
-        data-aos="zoom-out"
-        data-aos-delay={`${i * 3}00`}
+        data-aos="fade-up"
+        data-aos-delay={`${i + 1}00`}
         data-aos-duration="800"
         className={``}>
-        <div className='flex flex-col bg-white max-w-screen p-4 md:p-8 rounded-2xl min-h-full items-start hover:shadow-2xl  justify-center space-y-4 md:space-y-6 border-2 hover:scale-102 transition-all ease-out duration-200'>
+        <div className='flex flex-col bg-white max-w-screen p-4 md:p-8 rounded-2xl min-h-full items-start hover:shadow-CourseCard  justify-center space-y-4 md:space-y-6 border transition-all ease-out duration-200'>
           <h1 className=" text-xl md:text-2xl  lg:text-3xl font-bold">
             {title}
           </h1>

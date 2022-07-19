@@ -2,38 +2,40 @@ import React from 'react'
 import { courseArticles } from '../../utils/dummyData'
 import ArticlesCard from '../Cards/ArticlesCard'
 import Button from '../common/Button'
+import SectionTitle from '../Titles/SectionTitle'
 
 const ArticlesAndCourses = () => {
   return (
-    <div className='flex flex-col container '>
+    <div className='flex flex-col'>
 
-<div className='flex flex-col lg:flex-row justify-between gap-7'>
+      {/* wraperr */}
+      <div className="flex flex-col  items-center">
+        <div className='w-full flex flex-col space-y-10 py-8 themeBg'>
+          <div className='flex w-full py-4 container flex-col md:flex-row justify-between gap-7'>
+            <div className='flex  flex-col max-w-[35rem]'>
+              <h1 className='font-bold font-inter text-center md:text-left text-3xl md:text-4xl lg:text-5xl'>Discover our latest</h1>
+              <h1 className='font-bold mt-2 font-inter text-center md:text-left text-3xl md:text-4xl lg:text-5xl'>articles and insights.</h1>
+            </div>
+            <div className='mx-auto md:mx-0'>
+              <Button text='Get Started' />
+            </div>
+          </div>
+          <div className='grid container grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12'>
+            {courseArticles.map(({ image, title, type, desc }, i) => (
+              <div key={i}
+                data-aos="fade-up"
+                data-aos-delay={`${i + 1}00`}
+                data-aos-duration="800"
+                className='mx-auto'
+              >
+                <ArticlesCard image={image} title={title} type={type} desc={desc} />
+              </div>
 
-<div className='flex flex-col '>
-<h1 className='text-4xl font-bold'>Discover our latest articles and insights.</h1>
-<div className="h-1 bg-themeColor w-[8rem]"></div>
-</div>
+            ))}
+          </div>
 
-
-<div className='max-w-[200px]'>
-
-<Button text='Get Started' />
-</div>
-
-</div>
-
-{/* wraperr */}
-<div className='grid grid-cols-1 md:grid-cols-2 mt-10 lg:grid-cols-3 gap-4'>
-    {courseArticles.map(({image,title,type,desc},i)=>(
-        <div key={i}
-  data-aos="zoom-out"
-  data-aos-delay={`${i *2}00`}
-  data-aos-duration="800">
-<ArticlesCard image={image} title={title} type={type} desc={desc} />
         </div>
-
-    ))}
-</div>
+      </div>
 
     </div>
   )

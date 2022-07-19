@@ -30,20 +30,24 @@ const Contact = () => {
     <div className="small-container">
       <form className='space-y-5'>
         <div className="flex flex-col gap-6 w-full">
-          {inputFields.map(({ type, label },i) => (
-            <div key={i} className='border border-gray-500 rounded-md w-full hover:shadow-md hover:border-blue-600 hover:backdrop:blur-sm focus:border-2 transition-all ease-in-out duration-200'>
+          {inputFields.map(({ type, label }, i) => (
+            <div key={i} className='border border-gray-500 rounded-lg w-full hover:shadow-md hover:border-blue-600 hover:backdrop:blur-sm focus:border-2 transition-all ease-in-out duration-200'>
               {type === 'text' ? (
                 <input type="text" placeholder={`Enter your ${label}`} className='w-full outline-none bg-transparent placeholder:text-md placeholder:text-gray-600 p-3' />
-              ) : type === 'number'  ? (
-                <input type="text" placeholder={`Enter your ${label}`} className='w-full outline-none bg-transparent placeholder:text-md placeholder:text-gray-600 p-3'/>
+              ) : type === 'number' ? (
+                <input type="text" placeholder={`Enter your ${label}`} className='w-full outline-none bg-transparent placeholder:text-md placeholder:text-gray-600 p-3' />
               ) : (
-                type === 'textarea' ? <textarea rows={4} placeholder={`Enter your ${label}`}  className='w-full  outline-none bg-transparent placeholder:text-md placeholder:text-gray-600 p-3'/>
-                : type==='email' && <input type="email"  placeholder={`Enter your ${label}`} className='w-full outline-none bg-transparent placeholder:text-md placeholder:text-gray-600 p-3' />
+                type === 'textarea' ? <textarea rows={4} placeholder={`Enter your ${label}`} className='w-full  outline-none bg-transparent placeholder:text-md placeholder:text-gray-600 p-3' />
+                  : type === 'email' && <input type="email" placeholder={`Enter your ${label}`} className='w-full outline-none bg-transparent placeholder:text-md placeholder:text-gray-600 p-3' />
               )}
             </div>
           ))}
         </div>
-        <button className='font-bold  p-3 rounded-md text-white bg-blue-600 w-full hover:bg-blue-500 hover:scale-95 transition-all ease-in-out duration-150'>Submit</button>
+        <div className='flex items-center space-x-4'>
+          <input type='checkbox' />
+          <p>I am happy to be contacted via phone.</p>
+        </div>
+        <button className='font-bold  p-3 rounded-md text-white bg-blue-600 w-full hover:bg-blue-500 transition-all ease-in-out duration-150'>Contact Me</button>
       </form>
     </div>
   )
