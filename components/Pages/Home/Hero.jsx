@@ -21,7 +21,7 @@ const Hero = () => {
                     data-aos="fade-up"
                     data-aos-delay={`300`}
                     data-aos-duration="800"
-                    className='text-3xl font-inter font-extrabold text-center max-w-[55rem] md:text-5xl lg:text-7xl'>
+                    className='text-3xl font-lato font-extrabold text-center max-w-[55rem] md:text-5xl lg:text-7xl'>
                     CCIE, Cloud and Cyber Security Programs
                 </h1>
                 <h1
@@ -36,7 +36,6 @@ const Hero = () => {
                     data-aos-delay={`500`}
                     data-aos-duration="800"
                 >
-
                     <Button text='Join Now' big />
                 </div>
             </div>

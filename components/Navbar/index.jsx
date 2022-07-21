@@ -50,11 +50,11 @@ const Index = () => {
             </motion.a>
             <header
                 style={{
-                    background: 'linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7))'
+                    boxShadow: '0 4px 40px rgba(0,0,0,.08)'
                 }}
-                className='flex border-b z-50 backdrop-blur-md sticky inset-0  py-1 md:py-2 justify-center w-full'>
+                className='flex z-50 bg-white sticky md:inset-4 md:rounded-lg m-0 inset-0 md:m-4  py-1 md:py-2 justify-center'>
                 <NavDrawer open={open} setOpen={setOpen} />
-                <div className="container !overflow-visible flex justify-between">
+                <div className="w-full px-4 lg:px-8 !overflow-visible flex justify-between">
                     <div className="h-full items-center flex ">
                         <Logo />
                     </div>
@@ -63,7 +63,7 @@ const Index = () => {
                             <li
                                 onMouseEnter={() => setShowSubmenu(label)} onMouseLeave={() => setShowSubmenu('')}
                                 key={i} className='relative group h-full group flex space-x-3 items-center '>
-                                <a href={slug} className={`${page === slug ? 'text-themeColor' : 'text-themeDark'} ${submenu ? 'group-hover:text-themeColor' : 'link'} flex  text-base font-medium text-lightBlack`}>
+                                <a href={slug} className={`${page === slug ? 'text-themeColor' : 'text-themeDark'} ${submenu ? 'group-hover:text-themeColor' : 'link'} flex  text-lg font-medium text-lightBlack`}>
                                     {label}
                                 </a>
                                 {submenu &&

@@ -11,13 +11,13 @@ const Placements = () => {
         data-aos-duration="800"
         className="flex flex-col space-y-6 justify-center lg:justify-left text-center lg:text-left">
         <div className="flex flex-col  space-y-3">
-          <h1 className='text-3xl md:text-4xl font-inter lg:text-5xl font-bold'>Unlimited Learning</h1>
-          <h1 className='text-3xl md:text-4xl font-inter lg:text-5xl font-bold'>Unbeatable Placements</h1>
-          <div className="h-1 bg-themeColor w-[8rem]"></div>
+          <h1 className='text-3xl md:text-4xl font-lato lg:text-5xl font-extrabold'>Unlimited Learning</h1>
+          <h1 className='text-3xl md:text-4xl font-lato lg:text-5xl font-extrabold'>Unbeatable Placements</h1>
+          <div className="h-1 mx-auto lg:mx-0 bg-themeColor w-[8rem]"></div>
 
         </div>
 
-        <p className='text-sm md:text-base max-w-[40rem] mx-auto lg:mx-0 text-gray-600 font-medium'>
+        <p className='max-w-[40rem] mx-auto lg:mx-0 text-gray-600 font-medium'>
           {` CCIE training, Networking, Cloud, and Cyber security certification
           training with 100% placement. Lifetime access to Recorded Video
           content. In accordance with current occupational needs, we have

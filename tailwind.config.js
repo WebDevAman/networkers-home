@@ -10,8 +10,7 @@ module.exports = {
         'themeDark': '#111111'
       },
       fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
-        inter: ['Inter', 'sans-serif'],
+        lato: ['Lato', "sans-serif"],
 
       },
       boxShadow: {
