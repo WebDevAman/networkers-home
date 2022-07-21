@@ -10,8 +10,8 @@ const ArticlesAndCourses = () => {
 
       {/* wraperr */}
       <div className="flex flex-col  items-center">
-        <div className='w-full flex flex-col space-y-10 py-8 themeBg'>
-          <div className='flex w-full py-4 container flex-col md:flex-row justify-between gap-7'>
+        <div className='w-full flex flex-col space-y-10 pt-12 themeBg'>
+          <div className='flex w-full items-center pb-2 container flex-col md:flex-row justify-between gap-7'>
             <div className='flex  flex-col max-w-[35rem]'>
               <h1 className='font-extrabold font-lato text-center md:text-left text-3xl md:text-4xl lg:text-5xl'>Discover our latest</h1>
               <h1 className='font-extrabold mt-2 font-lato text-center md:text-left text-3xl md:text-4xl lg:text-5xl'>articles and insights.</h1>

@@ -9,13 +9,13 @@ import { TbChevronDown } from 'react-icons/tb'
 export default function SimpleAccordion({ ques, ans }) {
   return (
     <div>
-      <Accordion className='p-2 border-b !shadow-none'>
+      <Accordion className='py-1 border-b !shadow-none'>
         <AccordionSummary
           expandIcon={<TbChevronDown />}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography className='!font-semibold'>{ques}</Typography>
+          <Typography className='!font-semibold !text-lg'>{ques}</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>

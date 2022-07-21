@@ -4,17 +4,17 @@ import React from 'react'
 const ArticlesCard = ({ image, type, title, desc }) => {
   return (
     <div className='flex  flex-col  items-start space-y-3 w-full group h-full cursor-pointer '>
-      <div className="max-w-sm lg:max-w-full bg-white rounded-lg overflow-hidden shadow-lg border">
+      <div className="max-w-sm lg:max-w-full bg-white rounded-lg overflow-hidden h-full shadow-sm hover:shadow-xl mt-4 mb-12 border">
         <div className="overflow-hidden max-h-[15rem] ">
           <img className="w-full scale-110 hover:scale-125 transition-all duration-300" src={image} alt="image" />
         </div>
 
         <div className="px-6 py-4 space-y-3">
-          <div className="font-bold text-xl">Mountain</div>
+          <span className="inline-block bg-blue-200 text-themeColor rounded-full px-3 py-1 text-sm font-semibold">{type}</span>
+          <div className="font-bold text-xl">{title}</div>
           <p className="text-gray-700 text-base">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, Nonea! Maiores et perferendis eaque, exercitationem praesentium nihil.
+            {desc}
           </p>
-          <span className="inline-block bg-blue-200 text-themeColor rounded-full px-3 py-1 text-xs font-semibold">{type}</span>
         </div>
 
       </div>

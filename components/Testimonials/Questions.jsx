@@ -7,7 +7,7 @@ import SectionTitle from '../Titles/SectionTitle'
 
 const Questions = () => {
   return (
-    <div className='container p-5 space-y-10'>
+    <div className='container space-y-10'>
 
       <div className='flex flex-col space-y-3 items-center text-center justify-center'>
         <SectionTitle text={`Frequently Asked Questions`} />
