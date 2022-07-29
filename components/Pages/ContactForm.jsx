@@ -9,11 +9,18 @@ const ContactForm = () => {
         return <p>Thanks for joining!</p>;
     }
     return (
-        <div className="container grid gap-10 grid-cols-1 lg:grid-cols-2">
-            <div className="w-full h-full">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15555.536416677523!2d77.6321219!3d12.9151697!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6908c0bcd3bc3460!2sNETWORKERS%20HOME%20-%20CCIE%20CCNP%20and%20CCNA%20Training%20company%20offering%20AWS%2C%20CEH%20and%20Cyber%20security%20training%20courses!5e0!3m2!1sen!2sae!4v1655464379255!5m2!1sen!2sae" width="600" height="650" allowFullScreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div className=" grid py-6 gap-10 grid-cols-1 lg:grid-cols-2">
+            <div className="w-full min-h-[35rem] h-full max-w-[40rem] mx-auto">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15555.536416677523!2d77.6321219!3d12.9151697!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6908c0bcd3bc3460!2sNETWORKERS%20HOME%20-%20CCIE%20CCNP%20and%20CCNA%20Training%20company%20offering%20AWS%2C%20CEH%20and%20Cyber%20security%20training%20courses!5e0!3m2!1sen!2sae!4v1655464379255!5m2!1sen!2sae"
+                    width="100%"
+                    height="100%"
+                    allowFullScreen
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
             </div>
-            <form onSubmit={handleSubmit} className="w-full p-4 lg:p-10 flex flex-col space-y-6 h-full ">
+            <form onSubmit={handleSubmit} className="max-w-[40rem] mx-auto rounded-lg shadow-2xl w-full p-4 lg:p-10 flex flex-col space-y-6 h-full ">
                 <div className="flex flex-col space-y-1">
                     <label htmlFor='name' className='text-base opacity-80'>Your name*</label>
                     <div className="flex focus-within:shadow-md items-center border border-themeColor rounded-full p-2 overflow-hidden">

@@ -4,6 +4,7 @@ import SimpleAccordion from '../common/Question'
 import chatSvg from '../../public/assets/images/question.svg'
 import Button from '../common/Button'
 import SectionTitle from '../Titles/SectionTitle'
+import Link from 'next/link'
 
 const Questions = () => {
   return (
@@ -48,8 +49,13 @@ const Questions = () => {
 
           <h2 className='font-bold text-3xl'>Frquently Asked Questions</h2>
           <p className='font-semibold'>This is where all the answers to your questions are</p>
-          <Button text={'Contact Us'} />
 
+          <Link href='/networkers-home-contact-us'>
+            <a >
+              <Button text={'Contact Us'} />
+
+            </a>
+          </Link>
         </div>
 
       </div>

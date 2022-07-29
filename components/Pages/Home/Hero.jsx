@@ -47,7 +47,7 @@ const Hero = () => {
                 data-aos-delay={`600`}
                 data-aos-duration="800"
                 className="flex flex-col text-themeDark text-center">
-                <Link href='/somewhere'>
+                <Link href='/networkers-home-contact-us'>
                     <a className='text-lg md:text-xl font-semibold'>India s Biggest Cisco Training school</a>
                 </Link>
                 <HomeSlider />

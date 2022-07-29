@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { navData } from '../dummyData'
 import { GrMenu } from 'react-icons/gr'
 import { FaChevronDown } from 'react-icons/fa'
@@ -35,10 +35,24 @@ const Index = () => {
     const router = useRouter()
     const page = router.pathname.split('/')[1] === '' ? '/' : router.pathname.split('/')[1]
     console.log(page)
+    useEffect(() => {
+        if (typeof window != 'undefined') {
+            var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+            (function () {
+                var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+                s1.async = true;
+                s1.src = 'https://embed.tawk.to/5fa105ebe019ee7748f03b4b/default';
+                s1.charset = 'UTF-8';
+                s1.setAttribute('crossorigin', '*');
+                s0.parentNode.insertBefore(s1, s0);
+            })();
+            <script async defer src="https://cdn.boei.help/hello.js"></script>
+        }
+    }, [])
     return (
         <>
+
             <TopBar />
-            <div className="fixed right-[-60px] z-50 hidden md:flex justify-center cursor-pointer text-white font-semibold hover:opacity-80 w-[170px] py-3 text-center  -rotate-90 bg-themeColor top-[40vh]">Quick Contact</div>
             <motion.a
                 href='#'
                 className="fixed z-50 p-4 hover:scale-105 transition-all duration-300  text-white text-xl bg-themeColor rounded-full right-4 bottom-4"
@@ -53,6 +67,7 @@ const Index = () => {
                     boxShadow: '0 4px 40px rgba(0,0,0,.08)'
                 }}
                 className='flex z-50 bg-white sticky md:inset-4 md:rounded-lg m-0 inset-0 md:m-4  py-1 md:py-2 justify-center'>
+
                 <NavDrawer open={open} setOpen={setOpen} />
                 <div className="w-full px-4 lg:px-8 !overflow-visible flex justify-between">
                     <div className="h-full items-center flex ">
@@ -96,12 +111,12 @@ const Index = () => {
                             </li>
                         ))}
                     </ul>
-                    <div
-                        className="hidden lg:flex items-center">
-                        <a href='#'>
+                    <Link href='/networkers-home-contact-us'>
+                        <a
+                            className="hidden lg:flex items-center">
                             <Button text='Contact Us' />
                         </a>
-                    </div>
+                    </Link>
                     <div
                         className="flex lg:hidden items-center ">
                         <div className=' cursor-pointer py-1 px-2'>

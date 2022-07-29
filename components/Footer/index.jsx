@@ -5,12 +5,7 @@ import { socialData } from '../dummyData'
 import { BsChevronDoubleRight } from 'react-icons/bs'
 
 const index = () => {
-    const labelToLink = (text) => {
-        let label = text.toLowerCase()
-        let trimmed = label.trim()
-        let slug = label.replaceAll(' ', '-')
-        return slug
-    }
+
     return (
         <div
             style={{
@@ -32,7 +27,7 @@ const index = () => {
                     <ul className='space-y-4'>
                         {['Placement programs', 'Other courses', 'About us', 'Contact us'].map(label => (
                             <li key={label}>
-                                <Link href={labelToLink(label)}><a className='items-center space-x-2 hover:text-themeColor hover:space-x-4 transition-all duration-500 flex '><BsChevronDoubleRight /><span>{label}</span></a></Link>
+                                <Link href={'#'}><a className='items-center space-x-2 hover:text-themeColor hover:space-x-4 transition-all duration-500 flex '><BsChevronDoubleRight /><span>{label}</span></a></Link>
                             </li>
                         ))}
                     </ul>

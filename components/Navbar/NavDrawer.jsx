@@ -42,7 +42,7 @@ const NavDrawer = ({ open, setOpen }) => {
                                 </li>
                                 {showSubmenu === route.label &&
                                     <div className="pl-8 pb-4 flex flex-col w-full h-fit bg-white">
-                                        {route.submenu.map((route, i) => (
+                                        {route?.submenu?.map((route, i) => (
                                             <Link key={i} href={route.slug}>
                                                 <a className='flex py-2 items-center  space-x-2'>
                                                     <HiChevronRight /> <h1 className=' font-semibold'>{route.heading}</h1>
@@ -59,7 +59,7 @@ const NavDrawer = ({ open, setOpen }) => {
                             data-aos-delay={`500`}
                             className='flex flex-col border-b border-gray-200 '>
                             <li className='flex items-center cursor-pointer px-4 hover:pr-2 py-4 '>
-                                <Link href='#contact'>
+                                <Link href='/networkers-home-contact-us'>
                                     <a className='text-lg font-ubuntu hover:text-themeColor  font-semibold text-lightBlack hover:text-violet hover:underline'>
                                         Contact Us
                                     </a>
