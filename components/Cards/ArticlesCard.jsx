@@ -8,7 +8,7 @@ const ArticlesCard = ({ linkType, image, link, type, title, desc }) => {
       {
         linkType === 'hyper'
           ?
-          <a href={link} target='_blank' className='flex  flex-col  items-start space-y-3 w-full group h-full cursor-pointer '>
+          <a href={link} target='_blank' rel='noreferrer' className='flex  flex-col  items-start space-y-3 w-full group h-full cursor-pointer '>
             <div className="max-w-sm lg:max-w-full bg-white rounded-lg overflow-hidden h-full shadow-sm hover:shadow-xl mt-4 mb-12 border">
               <div className="overflow-hidden max-h-[15rem] ">
                 <img className="w-full scale-110 hover:scale-125 transition-all duration-300" src={image} alt="image" />

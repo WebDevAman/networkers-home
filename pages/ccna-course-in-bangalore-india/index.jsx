@@ -70,8 +70,8 @@ const index = () => {
                         </li>
                     </div>
                     <div className="flex flex-col mt-4 space-y-2">
-                        <a target='_blank' href='https://uploads-ssl.webflow.com/62a3260623ec5b668eeb0d5d/62ac3c289988300eb63458e1_CCNA.pdf' className="rounded-lg py-3 px-6 text-center w-full hover:opacity-80 text-lg bg-[#EED477]">Download Course Syllabus</a>
-                        <a target='_blank' href='https://www.cisco.com/c/dam/en_us/training-events/training-services/courses/implementing-and-administering-cisco-solutions-ccna.pdf' className="rounded-full border border-gray-300 bg-[#fafafa] py-3 px-6 text-center w-full hover:bg-[#efefef] text-lg">Cisco Official Course info</a>
+                        <a target='_blank' rel='noreferrer' href='https://uploads-ssl.webflow.com/62a3260623ec5b668eeb0d5d/62ac3c289988300eb63458e1_CCNA.pdf' className="rounded-lg py-3 px-6 text-center w-full hover:opacity-80 text-lg bg-[#EED477]">Download Course Syllabus</a>
+                        <a target='_blank' rel='noreferrer' href='https://www.cisco.com/c/dam/en_us/training-events/training-services/courses/implementing-and-administering-cisco-solutions-ccna.pdf' className="rounded-full border border-gray-300 bg-[#fafafa] py-3 px-6 text-center w-full hover:bg-[#efefef] text-lg">Cisco Official Course info</a>
                     </div>
                 </div>
             </div>

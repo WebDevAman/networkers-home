@@ -29,7 +29,7 @@ const index = () => {
                             Course description
                         </div>
                         <p className="text-base lg:text-lg">
-                            First time in India, any institute has started offering a 100% placement program to students based on CCNA +CCNP Training alone. We have named this Network Engineer-Mini package. The candidate will be trained on the new CCNA Track along with CCNP Enterprise modules. You will have access to unlimited Lab access and training via classroom or online mode. This program is specially designed for students who don't have budget of 1.50 Lakhs for CCIE programs and want to first start a career before making big investment.
+                            First time in India, any institute has started offering a 100% placement program to students based on CCNA +CCNP Training alone. We have named this Network Engineer-Mini package. The candidate will be trained on the new CCNA Track along with CCNP Enterprise modules. You will have access to unlimited Lab access and training via classroom or online mode. This program is specially designed for students who {`don't`} have budget of 1.50 Lakhs for CCIE programs and want to first start a career before making big investment.
                         </p>
                     </div>
                 </div>
