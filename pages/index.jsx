@@ -13,7 +13,7 @@ import ContactusTestimonial from '../components/Testimonials/ContactusTestimonia
 import TeamExperts from '../components/Testimonials/TeamExperts';
 import Questions from '../components/Testimonials/Questions';
 import ArticlesAndCourses from '../components/Testimonials/ArticlesAndCourses';
-
+import { courses } from '../components/dummyData'
 export default function Home() {
   React.useEffect(() => {
     Aos.init()
@@ -21,13 +21,13 @@ export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>Networkers Home</title>
-        <meta name="description" />
+        <title>NETWORKERS HOME - Best CCIE, Cyber security and Cloud Training</title>
+        <meta content="Top CCIE Training . Best Cyber security Training and Cloud. Networking training provider. Join World best training with 100% placement guarantee" name="description" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className='flex flex-col mt-12 space-y-12 lg:space-y-20'>
         <Hero />
-        <Testimonials />
+        <Testimonials courses={courses} />
         <div className='max-w-screen space-y-10'>
           <Placements />
           <PlacementRecords />

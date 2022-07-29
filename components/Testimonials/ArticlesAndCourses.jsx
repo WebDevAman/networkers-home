@@ -20,15 +20,15 @@ const ArticlesAndCourses = () => {
               <Button text='Get Started' />
             </div>
           </div>
-          <div className='grid container grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12'>
-            {courseArticles.map(({ image, title, type, desc }, i) => (
+          <div className='grid container grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0 lg:gap-12'>
+            {courseArticles.map(({ image, link, linkType, title, type, desc }, i) => (
               <div key={i}
                 data-aos="fade-up"
                 data-aos-delay={`${i + 1}00`}
                 data-aos-duration="800"
                 className='mx-auto'
               >
-                <ArticlesCard image={image} title={title} type={type} desc={desc} />
+                <ArticlesCard link={link} linkType={linkType} image={image} title={title} type={type} desc={desc} />
               </div>
 
             ))}

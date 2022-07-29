@@ -18,7 +18,6 @@ const CustomerReviews = () => {
         <div className="flex flex-col space-y-6">
           {reviews.slice(0, sliceBy).map(({ name, rating, message }, i) => (
             <React.Fragment key={i}>
-
               <ReviewCard
                 rating={rating}
                 name={name}

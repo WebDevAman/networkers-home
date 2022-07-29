@@ -102,23 +102,27 @@ export const frequentQues = [
   },
 ]
 
-export const courseArticles=[
+export const courseArticles = [
   {
-    image:'/assets/images/tut1.jpeg',
-    type:'IT CERTIFICATIONS',
-    title:'Top IT Certification',
-    desc:'Find out which courses can turn into hottest career opportunity for candidates'
+    image: '/assets/images/tut1.jpeg',
+    link: '/best-online-courses',
+    type: 'IT CERTIFICATIONS',
+    title: 'Top IT Certification',
+    desc: 'Find out which courses can turn into hottest career opportunity for candidates',
   },
   {
-    image:'/assets/images/tut2.png',
-    type:'TUTORIALS',
-    title:'Cisco SDWAN TLOC And TLOC Extension',
-    desc:'Learn expert level knowledge on TLOC and TLOC extension'
+    image: '/assets/images/tut2.png',
+    link: 'https://www.youtube.com/watch?v=iEPRtfnfKKo&t=2s',
+    type: 'TUTORIALS',
+    title: 'Cisco SDWAN TLOC And TLOC Extension',
+    desc: 'Learn expert level knowledge on TLOC and TLOC extension',
+    linkType: 'hyper'
   },
   {
-    image:'/assets/images/tut3.png',
-    type:'CAREER ADVICE',
-    title:'How CCIE Certification can help you land a 50 lakhs job in 5years',
-    desc:'CCIE Certified Engineers salary is touching sky due to 2 years of Cisco exam locations closed because of Covid19 Situation'
+    image: '/assets/images/tut3.png',
+    link: '/ccie-scope-in-india',
+    type: 'CAREER ADVICE',
+    title: 'How CCIE Certification can help you land a 50 lakhs job in 5years',
+    desc: 'CCIE Certified Engineers salary is touching sky due to 2 years of Cisco exam locations closed because of Covid19 Situation',
   },
 ]

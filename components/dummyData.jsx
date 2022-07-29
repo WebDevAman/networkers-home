@@ -8,7 +8,7 @@ export const navData = [
     },
     {
         label: "Placement Programs",
-        slug: "/placement-programs",
+        slug: "#",
         submenu: [
             {
                 heading: 'Cyberx Masters',
@@ -17,17 +17,17 @@ export const navData = [
             },
             {
                 heading: 'Cloud Masters',
-                slug: 'cyberx-masters',
+                slug: 'cloud-masters',
                 description: '100% Placement program in Multicloud and Cloud security'
             },
             {
                 heading: 'CCIE Enterprise',
-                slug: 'cyberx-masters',
+                slug: 'ccie-enterprise-infra-training',
                 description: 'Most demanded Networking certification- 100 % Placement'
             },
             {
                 heading: 'CCIE Security',
-                slug: 'cyberx-masters',
+                slug: 'ccie-security-training-course',
                 description: 'Most demanded Networking certification- 100% Placement'
             },
         ]
@@ -50,82 +50,11 @@ export const socialData = [
     { link: '/', icon: <FaInstagram className='text-lg' /> },
 ]
 
-export const galleryData = [
-    {
-        heading: 'Lorem Ipsum',
-        text: '',
-        imageUrl: '/images/gallery/1.jpg'
-    },
-    {
-        heading: 'Lorem Ipsum',
-        text: '',
-        imageUrl: '/images/gallery/2.jpg'
-    },
-    {
-        heading: 'Lorem Ipsum',
-        text: '',
-        imageUrl: '/images/gallery/3.jpg'
-    },
-    {
-        heading: 'Lorem Ipsum',
-        text: '',
-        imageUrl: '/images/gallery/4.jpg'
-    },
-    {
-        heading: 'Lorem Ipsum',
-        text: '',
-        imageUrl: '/images/gallery/5.jpg'
-    },
-    {
-        heading: 'Lorem Ipsum',
-        text: '',
-        imageUrl: '/images/gallery/1.jpg'
-    },
-    {
-        heading: 'Lorem Ipsum',
-        text: '',
-        imageUrl: '/images/gallery/2.jpg'
-    },
-    {
-        heading: 'Lorem Ipsum',
-        text: '',
-        imageUrl: '/images/gallery/3.jpg'
-    },
-    {
-        heading: 'Lorem Ipsum',
-        text: '',
-        imageUrl: '/images/gallery/4.jpg'
-    },
-]
-
-export const cardData = [
-    { heading: "TALK ABOUT IT", text: 'Discuss design ideas, options, budget, with your jewelry consultant - your guide to the custom experience.', icon: '/images/services/talk-icon.png' },
-    { heading: "GET IT DESIGNED", text: 'See sketches and concept art designed just for you by our jewelry artists.', icon: '/images/services/design-icon.png' },
-    { heading: "SEE IT COME TO LIFE", text: `Visualize your piece with high resolution 3D renderings, and we'll adjust every detail until you tell us it's perfect.`, icon: '/images/services/mobile-hand-icon.png' },
-    { heading: "TREASURE IT", text: `Receive your custom piece, with the assurance it's been made to wear and last a lifetime.`, icon: '/images/services/treasure-icon.png' },
-]
-export const serviceData = [
-    {
-        heading: "Dedicated Service",
-        text: `Our team of design consultants helps you figure out the details, weigh all the options, and guides you through each step of creating a piece of custom jewelry.`,
-        imageUrl: '/images/banner/3.jpg'
-    },
-    {
-        heading: "Personalized Design",
-        text: `Our team of artists design pieces just for you, and we'll tweak the details until you say it's perfect.`,
-        imageUrl: '/images/services/2.jpg'
-    },
-    {
-        heading: "Expertise",
-        text: `From your design consultants and artists, to our staff gemologists and our experienced jewelers, your project is handled with the utmost precision, care, and knowledge.`,
-        imageUrl: '/images/services/1.jpg'
-
-    },
-]
 
 export const courses = [
     {
         title: 'Cloud Masters',
+        link: '/cloud-masters',
         desc: 'Learn technologies of tomorrow that can give you an edge over competitors. We have created a unique combination of Cloud technologies and Cloud security practices. Cloud Masters takes you into the Deep dive world of cloud computing with real projects. Its first program in india which offers you multi-cloud expertise in AWS,Google cloud and Azure domain',
         projects: [
             {
@@ -145,7 +74,8 @@ export const courses = [
         ]
     },
     {
-        title: 'Cyber Masters',
+        title: 'Cyberx Masters',
+        link: '/cyberx-masters',
         desc: 'Our 6 Months Cyber Security Program is designed to train fresh graduates. Program covers some of the latest IT Certifications in demand like CCNA, CCNP- 3 modules, CEH and CHFI, Penetration testing/ Cloud Pen testing along with automation using python and ansible. Lifetime video access to course.',
         projects: [
             {
@@ -167,28 +97,26 @@ export const courses = [
     },
     {
         title: 'CCIE Enterprise Integrated',
+        link: '/ccie-enterprise-infra-training',
         desc: 'This program suitable for candidates who want to build career in Core Networking. Cover SDN, SDWAN and more advance technologies',
         img: '/assets/images/people4.jpeg'
-
-
     },
     {
         title: 'CCIE Security Integrated',
+        link: '/ccie-security-training-course',
         desc: '6 Months Training program suitable for candidates who want to build a career in Cyber Security and Network security domain',
         img: '/assets/images/people4.jpeg'
 
     },
     {
+        link: '/ccna-ccnp-training-online-combo',
         title: 'CCNA + CCNP Combo',
         desc: 'This program suitable for candidates who want to build career in Networking Industry. Learn MPLS,SDWAN and SDACCESS technologies',
-
-
     },
     {
+        link: '/ccie-security-training-course',
         title: 'Blockchain Masters',
         desc: 'Blockchain Masters program for building long-lasting career in Web3 technologies. Hands on lab with projects',
-
-
     },
 ]
 
@@ -255,5 +183,129 @@ export const reviews = [
         name: 'Sachin Bangari',
         message: `My personal experience in networkers home is very very good. I had joined for a course here and got 2 offers immediately after completion of my course.My advice to the candidates willing to do networking course is that, this is the Best training institute in Bangalore in networking domain, the concepts clarity, the lab facility anytime we need, the support and respect from the management and special mention the HR Preethi ma'am will support everyone to get placed it you are serious about your learning.`,
         rating: 5
+    },
+]
+
+export const coursePageGridData = [
+    {
+        heading: 'CCNA 200-301',
+        text: 'CCNA is entry-level Networking certification in the Cisco domain. Covers various technologies like Routing/switching and automation fundamentals in detail.',
+        slug: '/ccna-course-in-bangalore-india'
+    },
+    {
+        heading: 'CCNP Enterprise',
+        text: 'Cisco Advanced Level certifications. We teach ENCORE, ENARSI and Cisco SDWAN Modules in our CCNP Enterprise course',
+        slug: '/ccnp-enterprise-training-bangalore',
+        highlight: true
+    },
+    {
+        heading: 'Cisco SDWAN',
+        text: `Most demanded course today for working professionals and must have technology to upgrade your career. Learn from India's best instructors`,
+        slug: '/cisco-sdwan-training-online'
+    },
+    {
+        heading: 'Cisco DNAC',
+        text: `Advanced level certifications for highly qualified Cisco engineers. Must be minimum CCNP certified before taking this course.`,
+        slug: '/cisco-dna-center-training-online-dnac-ise'
+    },
+    {
+        heading: 'CEH',
+        text: `Advanced level certifications for highly qualified Cisco engineers. Must be minimum CCNP certified before taking this course.`,
+        slug: '#'
+    },
+    {
+        heading: 'F5 LTM',
+        text: `Advanced level certifications for highly qualified Cisco engineers. Must be minimum CCNP certified before taking this course.`,
+        slug: '#'
+    },
+    {
+        heading: 'PALO ALTO',
+        text: `Advanced level certifications for highly qualified Cisco engineers. Must be minimum CCNP certified before taking this course.`,
+        slug: '#'
+    },
+    {
+        heading: 'Fortigate',
+        text: `Advanced level certifications for highly qualified Cisco engineers. Must be minimum CCNP certified before taking this course.`,
+        slug: '#'
+    },
+    {
+        heading: 'AWS Assocaite',
+        text: `Advanced level certifications for highly qualified Cisco engineers. Must be minimum CCNP certified before taking this course.`,
+        slug: '#'
+    },
+    {
+        heading: 'AWS Professional',
+        text: `Advanced level certifications for highly qualified Cisco engineers. Must be minimum CCNP certified before taking this course.`,
+        slug: '#'
+    },
+    {
+        heading: 'AWS Security',
+        text: `Advanced level certifications for highly qualified Cisco engineers. Must be minimum CCNP certified before taking this course.`,
+        slug: '#'
+    },
+    {
+        heading: 'AWS Advance Networking',
+        text: `Advanced level certifications for highly qualified Cisco engineers. Must be minimum CCNP certified before taking this course.`,
+        slug: '#'
+    },
+    {
+        heading: 'CCIE Enterprise',
+        text: `Advanced level certifications for highly qualified Cisco engineers. Must be minimum CCNP certified before taking this course.`,
+        slug: '/ccie-enterprise-infra-training'
+    },
+    {
+        heading: 'CCIE Security',
+        text: `Advanced level certifications for highly qualified Cisco engineers. Must be minimum CCNP certified before taking this course.`,
+        slug: '/ccie-security-training-course'
+    },
+    {
+        heading: 'CCNA+CCNP Combo',
+        text: `Advanced level certifications for highly qualified Cisco engineers. Must be minimum CCNP certified before taking this course.`,
+        slug: '/ccna-ccnp-training-online-combo'
+    },
+    {
+        heading: 'Blockchain',
+        text: `Advanced level certifications for highly qualified Cisco engineers. Must be minimum CCNP certified before taking this course.`,
+        slug: '#'
+    },
+]
+
+export const coursePageProgramsData = [
+    {
+        title: 'Cloud Masters',
+        link: '/cloud-masters',
+        desc: 'Learn technologies of tomorrow that can give you an edge over competitors. We have created a unique combination of Cloud technologies and Cloud security practices. Cloud Masters takes you into the Deep dive world of cloud computing with real projects. Its first program in india which offers you multi-cloud expertise in AWS,Google cloud and Azure domain',
+        img: '/assets/images/people4.jpeg'
+    },
+    {
+        title: 'Cyber Masters',
+        link: '/cyberx-masters',
+        desc: 'Our 6 Months Cyber Security Program is designed to train fresh graduates. Program covers some of the latest IT Certifications in demand like CCNA, CCNP- 3 modules, CEH and CHFI, Penetration testing/ Cloud Pen testing along with automation using python and ansible. Lifetime video access to course.',
+        img: '/assets/images/people4.jpeg'
+    },
+    {
+        title: 'CCIE Enterprise Integrated',
+        link: '/ccie-enterprise-infra-training',
+        desc: 'This program suitable for candidates who want to build career in Core Networking. Cover SDN, SDWAN and more advance technologies',
+        img: '/assets/images/people4.jpeg'
+    },
+    {
+        title: 'CCIE Security Integrated',
+        link: '/ccie-security-training-course',
+        desc: '6 Months Training program suitable for candidates who want to build a career in Cyber Security and Network security domain',
+        img: '/assets/images/people4.jpeg'
+
+    },
+    {
+        link: '/ccna-ccnp-training-online-combo',
+        title: 'CCNA + CCNP Combo',
+        desc: 'This program suitable for candidates who want to build career in Networking Industry. Learn MPLS,SDWAN and SDACCESS technologies',
+        img: '/assets/images/people4.jpeg'
+    },
+    {
+        link: '/ccie-security-training-course',
+        title: 'Blockchain Masters',
+        desc: 'Blockchain Masters program for building long-lasting career in Web3 technologies. Hands on lab with projects',
+        img: '/assets/images/people4.jpeg'
     },
 ]

@@ -11,10 +11,6 @@ html {
   --theme: #0070F3
 }
 
-::selection {
-  background: transparent;
-}
-
 @layer components {
   .container {
     @apply w-full max-w-[85rem] mx-auto px-4 overflow-hidden font-lato text-themeDark !important
@@ -87,11 +83,6 @@ html {
   font-weight: bold;
   color: var(--theme);
 }
-
-
-
-
-
 
 .link {
   position: relative;

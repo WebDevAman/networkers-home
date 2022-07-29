@@ -2,9 +2,9 @@ import React from 'react'
 import { HiOutlineChevronDoubleRight } from 'react-icons/hi'
 import Link from 'next/link'
 
-const CourseCard = ({ title, desc, projects, img, i }) => {
+const CourseCard = ({ title, desc, link, projects, img, i }) => {
   return (
-    <Link href='/'>
+    <Link href={link}>
       <a
         data-aos="fade-up"
         data-aos-delay={`${i + 1}00`}

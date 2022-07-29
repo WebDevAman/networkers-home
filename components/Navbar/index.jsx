@@ -63,9 +63,12 @@ const Index = () => {
                             <li
                                 onMouseEnter={() => setShowSubmenu(label)} onMouseLeave={() => setShowSubmenu('')}
                                 key={i} className='relative group h-full group flex space-x-3 items-center '>
-                                <a href={slug} className={`${page === slug ? 'text-themeColor' : 'text-themeDark'} ${submenu ? 'group-hover:text-themeColor' : 'link'} flex  text-lg font-medium text-lightBlack`}>
-                                    {label}
-                                </a>
+
+                                <Link href={slug}>
+                                    <a className={`${page === slug ? 'text-themeColor' : 'text-themeDark'} ${submenu ? 'group-hover:text-themeColor' : 'link'} flex  text-lg font-medium text-lightBlack`}>
+                                        {label}
+                                    </a>
+                                </Link>
                                 {submenu &&
                                     <FaChevronDown className='group-hover:text-themeColor' />
                                 }
@@ -75,7 +78,7 @@ const Index = () => {
                                             boxShadow: '0px 1px 28px -15px rgba(0,0,0,0.75)',
                                             background: 'linear-gradient(rgba(255,255,255,0.3),rgba(255,255,255,0.3))'
                                         }}
-                                        className='absolute  top-[100%] z-20 left-[-2rem] w-[120%] backdrop-blur-lg overflow-hidden  flex flex-col'>
+                                        className='absolute rounded-lg top-[100%] z-20 left-[-2rem] w-[120%] backdrop-blur-lg overflow-hidden  flex flex-col'>
                                         {submenu.map(({ heading, slug, description }, i) => (
                                             <li
                                                 key={i}

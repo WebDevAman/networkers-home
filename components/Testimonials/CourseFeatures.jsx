@@ -2,9 +2,9 @@ import React from 'react'
 import { IoIosCheckmarkCircle } from 'react-icons/io'
 import SectionTitle from '../Titles/SectionTitle'
 
-const CourseFeatures = () => {
+const CourseFeatures = ({ noBG }) => {
   return (
-    <div className="w-full themeBg py-12">
+    <div className={`w-full ${noBG ? 'bg-white' : 'themeBg'} py-12`}>
       <div className="grid container gap-5 px-4 lg:px-20 py-4 grid-cols-1 mx-auto lg:grid-cols-2 place-content-center place-items-center">
         {/* left  */}
         <div

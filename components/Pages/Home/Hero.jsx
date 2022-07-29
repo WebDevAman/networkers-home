@@ -31,13 +31,16 @@ const Hero = () => {
                     className='text-xl md:text-2xl max-w-[50rem] font-semibold text-center'>
                     Lifetime access to Videos. CCIE Certified instructors. 100% Placement programs
                 </h1>
-                <div
-                    data-aos="fade-up"
-                    data-aos-delay={`500`}
-                    data-aos-duration="800"
-                >
-                    <Button text='Join Now' big />
-                </div>
+                <Link
+                    href='/networkers-home-contact-us'>
+                    <a
+                        data-aos="fade-up"
+                        data-aos-delay={`500`}
+                        data-aos-duration="800"
+                    >
+                        <Button text='Join Now' big />
+                    </a>
+                </Link>
             </div>
             <div
                 data-aos="fade-up"
@@ -49,7 +52,7 @@ const Hero = () => {
                 </Link>
                 <HomeSlider />
             </div>
-        </div>
+        </div >
     )
 }
 
