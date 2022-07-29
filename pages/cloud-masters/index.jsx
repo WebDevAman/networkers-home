@@ -60,7 +60,7 @@ const index = () => {
                     <h1 className='text-2xl lg:text-4xl font-extrabold mb-4'>Course Features</h1>
                     <div className="flex flex-col space-y-2">
                         <li className='text-base lg:text-lg'>
-                            The candidate should have good English communication skills in order to seek placement although multiple placement sessions are organized. Minimum graduate candidates can apply for admission. We don't offer placement for undergraduates at this time.
+                            The candidate should have good English communication skills in order to seek placement although multiple placement sessions are organized. Minimum graduate candidates can apply for admission. We {`don't`} offer placement for undergraduates at this time.
                         </li>
                         <li className='text-base lg:text-lg'>
                             Learn how to design, deploy, and manage cloud computing platforms during this comprehensive course
