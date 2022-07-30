@@ -12,7 +12,7 @@ const Error = () => {
                     <h1 className='text-4xl text-center text-themeColor font-bold md:text-6xl'>
                         Page Not Found
                     </h1>
-                    <p className="text-base lg:text-lg my-6 text-center">The page you are looking for doesn't exist or has been moved</p>
+                    <p className="text-base lg:text-lg my-6 text-center">The page you are looking for {`doesn't`} exist or has been moved</p>
                     <div className="mx-auto max-w-[12rem]">
                         <Link href='/'>
                             <a>
