@@ -10,9 +10,11 @@ const CoursesGrid = ({ courses }) => {
                     <div className='flex  flex-col max-w-[35rem]'>
                         <h1 className='font-extrabold font-lato text-center md:text-left text-3xl md:text-4xl lg:text-5xl'>43 IT Certifications to choose from</h1>
                     </div>
-                    <div className='mx-auto md:mx-0'>
-                        <Button text='Get Started' />
-                    </div>
+                    <Link href='/networkers-home-contact-us'>
+                        <a className='mx-auto md:mx-0'>
+                            <Button text='Contact Us' />
+                        </a>
+                    </Link>
                 </div>
                 <div className='grid mb-12 mt-6 grid-cols-1 items-stretch md:grid-cols-2 lg:grid-cols-3 border-[0.51px] xl:grid-cols-4'>
                     {courses.map(({ heading, highlight, text, slug }, i) => (

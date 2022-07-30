@@ -7,6 +7,7 @@ import CustomerReviews from '../../components/Testimonials/CustomerReviews'
 import CourseFeatures from '../../components/Testimonials/CourseFeatures'
 import { RiStarSFill } from 'react-icons/ri'
 import Head from 'next/head'
+import Link from 'next/link'
 
 const descList = [
     'CCNA - 200 - 301',
@@ -83,7 +84,11 @@ const index = () => {
                             Checkout full syllabus for relevant courses
                         </p>
                     </div>
-                    <button className="bg-[#EED477] mt-4 md:mt-0 font-semibold py-3 px-6 border-2 border-white rounded-lg">Contact Us</button>
+                    <Link href='/networkers-home-contact-us'>
+                        <a>
+                            <button className="bg-[#EED477] mt-4 md:mt-0 font-semibold py-3 px-6 border-2 border-white rounded-lg">Contact Us</button>
+                        </a>
+                    </Link>
                 </div>
             </div>
             <CourseFeatures noBG={true} />

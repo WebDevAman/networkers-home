@@ -6,6 +6,7 @@ import PlacementRecords from '../../components/Testimonials/PlacementRecords'
 import CustomerReviews from '../../components/Testimonials/CustomerReviews'
 import { RiStarSFill } from 'react-icons/ri'
 import Head from 'next/head'
+import Link from 'next/link'
 
 
 const index = () => {
@@ -52,8 +53,11 @@ const index = () => {
                     </div>
                     <div className="flex flex-col space-y-4">
                         <a className="bg-[#f3f0e3] mt-4 md:mt-0 font-semibold py-3 px-6 border-2 border-white rounded-lg" href='https://uploads-ssl.webflow.com/62a3260623ec5b668eeb0d5d/62ac50145f9eb98c4157b5bd_300-415-ENSDWI.pdf'>Contact Us</a>
-                        <button className="bg-[#EED477] mt-4 md:mt-0 font-semibold py-3 px-6 border-2 border-white rounded-lg">Contact Us</button>
-
+                        <Link href='/networkers-home-contact-us'>
+                            <a>
+                                <button className="bg-[#EED477] mt-4 md:mt-0 font-semibold py-3 px-6 border-2 border-white rounded-lg">Contact Us</button>
+                            </a>
+                        </Link>
                     </div>
                 </div>
             </div>
